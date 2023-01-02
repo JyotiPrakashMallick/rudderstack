@@ -4,5 +4,60 @@
 		"name": "Rudderstack",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "https://livejyotieyql.dataplane.rudderstack.com/v1/identify",
+			"id": "434a378a-05b8-4170-a1a5-64417c0cef47",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "livejyotieyql.dataplane.rudderstack.com",
+						"type": "text"
+					},
+					{
+						"key": "path",
+						"value": "/v1/identify",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "origin",
+						"value": "https://jyotiprakashmallick.github.io",
+						"type": "text"
+					},
+					{
+						"key": "referer",
+						"value": "https://jyotiprakashmallick.github.io/",
+						"type": "text"
+					},
+					{
+						"key": "referer",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"channel\":\"web\",\"context\":{\"app\":{\"build\":\"1.0.0\",\"name\":\"RudderLabs JavaScript SDK\",\"namespace\":\"com.rudderlabs.javascript\",\"version\":\"1.21.0\"},\"traits\":{\"favorite_team\":\"Manchester United\"},\"library\":{\"name\":\"RudderLabs JavaScript SDK\",\"version\":\"1.21.0\"},\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\",\"locale\":\"en-US\",\"os\":{\"name\":\"\",\"version\":\"\"},\"screen\":{\"density\":1,\"width\":1920,\"height\":1080,\"innerWidth\":463,\"innerHeight\":951},\"sessionId\":1672653306569,\"sessionStart\":true,\"campaign\":{},\"page\":{\"path\":\"/rudderstack/\",\"referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"referring_domain\":\"github.com\",\"search\":\"\",\"title\":\"RudderStack in 5\",\"url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"tab_url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"initial_referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"initial_referring_domain\":\"github.com\"}},\"type\":\"identify\",\"messageId\":\"1672653306571900-6143901a-318e-4482-8da3-76eaad446cbb\",\"originalTimestamp\":\"2023-01-02T09:55:06.579Z\",\"anonymousId\":\"6d976208-732b-4fe4-abfd-33fc43614390\",\"userId\":\"jyoti.mallick@gmail.com\",\"integrations\":{\"All\":true},\"sentAt\":\"2023-01-02T09:55:06.584Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://livejyotieyql.dataplane.rudderstack.com/v1/identify"
+			},
+			"response": []
+		}
+	]
 }
