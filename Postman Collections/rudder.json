@@ -25,7 +25,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Repsonse body should be contain 'OK'\", function () {\r",
-							"    pm.expect(pm.response).to.be.contain('OK');\r",
+							"    pm.expect(pm.response).to.be.contain(OK);\r",
 							"    console.log(\"T03 [Positive]: Verify the body should contain 'OK'\");\r",
 							"})"
 						],
