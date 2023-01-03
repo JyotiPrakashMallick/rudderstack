@@ -45,7 +45,19 @@
 							" let email=uuid()+'@domain.com'\r",
 							"\r",
 							" console.log(\"----------->\",email)\r",
-							" //pm.environment.set('email',email)"
+							"\r",
+							"const clubName=[\"Arsenal\",\"Aston Villa FC\",\"Bournemouth AFC\",\"Brentford\",\"Brighton & Hove Albion\",\"Chelsea\",\"Crystal Palace\",\r",
+							"\"Everton FC\",\"Fulham\",\"Leicester City FC\",\"Leeds United\",\"Liverpool FC\",\"Manchester City FC\",\"Manchester United FC\",\r",
+							"\"Newcastle United\",\"Nottingham Forest\",\"Southampton FC\",\"Tottenham Hotspur FC\",\"West Ham United\",\"Wolverhampton Wanderers\",\r",
+							"\"FC Bayern Munich\",\"SV Werder Bremen\",\"Borussia Dortmund\",\"VfB Stuttgart\",\"Hamburger SV\",\"Borussia Mönchengladbach\",\r",
+							"\"Eintracht Frankfurt\",\"FC Schalke\",\"Bayer 04 Leverkusen\",\"Hertha BSC\",\"VfL Bochum\",\"Hannover\",\"MSV Duisburg\",\"VfL Wolfsburg\",\r",
+							"\"Fortuna Düsseldorf\",\"Karlsruher SC\",\"SC Freiburg\",\"Eintracht Braunschweig\",\"TSV 1860 München\",\"Arminia Bielefeld\",\"TSG 1899 Hoffenheim\",\"KFC Uerdingen\",\"F.C. Hansa Rostock\",\"FC Augsburg\",\"FC St. Pauli\",\"SV Waldhof Mannheim\",\"Kickers Offenbach\",\"Rot-Weiss Essen\",\"RB Leipzig\",\"FC Energie Cottbus\",\"SV Darmstadt\",\"Alemannia Aachen\",\"Dynamo Dresden\",\"SG Wattenscheid\",\"Wuppertaler SV\",\"Borussia Neunkirchen\",\"SpVgg Greuther Fürth\",\"SC Paderborn\",\"FC Ingolstadt\",\"SpVgg Unterhaching\",\"Stuttgarter Kickers\",\"Tennis Borussia Berlin\"]                                       \r",
+							"\r",
+							"let randomClubName= clubName[Math.floor(Math.random() * clubName.length)]\r",
+							"\r",
+							" console.log(\"----------->\",randomClubName)\r",
+							"\r",
+							" pm.environment.set('email',email)"
 						],
 						"type": "text/javascript"
 					}
@@ -100,7 +112,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"channel\":\"web\",\"context\":{\"app\":{\"build\":\"1.0.0\",\"name\":\"RudderLabs JavaScript SDK\",\"namespace\":\"com.rudderlabs.javascript\",\"version\":\"1.21.0\"},\"traits\":{\"favorite_team\":\"Manchester United\"},\"library\":{\"name\":\"RudderLabs JavaScript SDK\",\"version\":\"1.21.0\"},\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\",\"locale\":\"en-US\",\"os\":{\"name\":\"\",\"version\":\"\"},\"screen\":{\"density\":1,\"width\":1920,\"height\":1080,\"innerWidth\":463,\"innerHeight\":951},\"sessionId\":1672653306569,\"sessionStart\":true,\"campaign\":{},\"page\":{\"path\":\"/rudderstack/\",\"referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"referring_domain\":\"github.com\",\"search\":\"\",\"title\":\"RudderStack in 5\",\"url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"tab_url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"initial_referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"initial_referring_domain\":\"github.com\"}},\"type\":\"identify\",\"messageId\":\"1672653306571900-6143901a-318e-4482-8da3-76eaad446cbb\",\"originalTimestamp\":\"2023-01-02T09:55:06.579Z\",\"anonymousId\":\"6d976208-732b-4fe4-abfd-33fc43614390\",\"userId\":\"jyoti.mallick@gmail.com\",\"integrations\":{\"All\":true},\"sentAt\":\"2023-01-02T09:55:06.584Z\"}",
+					"raw": "{\"channel\":\"web\",\"context\":{\"app\":{\"build\":\"1.0.0\",\"name\":\"RudderLabs JavaScript SDK\",\"namespace\":\"com.rudderlabs.javascript\",\"version\":\"1.21.0\"},\"traits\":{\"favorite_team\":\"Manchester United\"},\"library\":{\"name\":\"RudderLabs JavaScript SDK\",\"version\":\"1.21.0\"},\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\",\"locale\":\"en-US\",\"os\":{\"name\":\"\",\"version\":\"\"},\"screen\":{\"density\":1,\"width\":1920,\"height\":1080,\"innerWidth\":463,\"innerHeight\":951},\"sessionId\":1672653306569,\"sessionStart\":true,\"campaign\":{},\"page\":{\"path\":\"/rudderstack/\",\"referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"referring_domain\":\"github.com\",\"search\":\"\",\"title\":\"RudderStack in 5\",\"url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"tab_url\":\"https://jyotiprakashmallick.github.io/rudderstack/\",\"initial_referrer\":\"https://github.com/JyotiPrakashMallick/rudderstack/settings/pages\",\"initial_referring_domain\":\"github.com\"}},\"type\":\"identify\",\"messageId\":\"1672653306571900-6143901a-318e-4482-8da3-76eaad446cbb\",\"originalTimestamp\":\"2023-01-02T09:55:06.579Z\",\"anonymousId\":\"6d976208-732b-4fe4-abfd-33fc43614390\",\"userId\":\"{{email}}\",\"integrations\":{\"All\":true},\"sentAt\":\"2023-01-02T09:55:06.584Z\"}",
 					"options": {
 						"raw": {
 							"language": "json"
