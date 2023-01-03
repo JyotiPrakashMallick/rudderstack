@@ -70,6 +70,12 @@
 						"key": "authorization",
 						"value": "Basic MkpsVTZ3b3FjNU1sNzZBWTlERDFrZ05CcnR0Og==",
 						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
