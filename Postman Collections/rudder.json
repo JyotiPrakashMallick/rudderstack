@@ -35,6 +35,20 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cf6b807d-5a0a-477d-b2b4-3180d3607613",
+						"exec": [
+							"const uuid = require('uuid')\r",
+							" let email=uuid()+'@domain.com'\r",
+							"\r",
+							" console.log(\"----------->\",email)\r",
+							" //pm.environment.set('email',email)"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "434a378a-05b8-4170-a1a5-64417c0cef47",
