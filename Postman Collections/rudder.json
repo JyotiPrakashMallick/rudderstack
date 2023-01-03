@@ -27,6 +27,10 @@
 							"pm.test(\"Repsonse body should be contain 'OK'\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"OK\");\r",
 							"    console.log(\"T03 [Positive]: Verify the body should contain 'OK'\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Status Code is 200\", () => {\r",
+							"    pm.expect(pm.response.code).to.eql(200);\r",
 							"})"
 						],
 						"type": "text/javascript"
