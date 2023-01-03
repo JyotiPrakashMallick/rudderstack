@@ -15,17 +15,19 @@
 						"exec": [
 							"pm.test (\"Verify Status Code should be 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"    console.log(\"Verify Response Code 201: Test Passed\")\r",
+							"    console.log(\"T01 [Positive]: Verify Response Code 201: Test Passed\");\r",
 							"});\r",
 							"\r",
 							"\r",
 							"pm.test(\"Response Time should be less than 4 sec\", function () {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
-							"    console.log(\"T02 [Positive]: Verify the response time should be less than 4 sec\")\r",
+							"    console.log(\"T02 [Positive]: Verify the response time should be less than 4 sec\");\r",
 							"});\r",
 							"\r",
-							"var responsebodyDetails = JSON.parse(responseBody)\r",
-							"console.log(\"----->\",responsebodyDetails)"
+							"pm.test(\"Repsonse body should be contain 'OK'\", function () {\r",
+							"    pm.expect(pm.response).to.be.contain('OK');\r",
+							"    console.log(\"T03 [Positive]: Verify the body should contain 'OK'\");\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
