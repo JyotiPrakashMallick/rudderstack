@@ -41,17 +41,17 @@
 					"script": {
 						"id": "cf6b807d-5a0a-477d-b2b4-3180d3607613",
 						"exec": [
-							"const uuid = require('uuid')\r",
-							"let email=uuid()+'@domain.com'\r",
+							"const uuid = require('uuid');\r",
+							"let email=uuid()+'@domain.com';\r",
 							"const clubName=[\"Arsenal\",\"Aston Villa FC\",\"Bournemouth AFC\",\"Brentford\",\"Brighton & Hove Albion\",\"Chelsea\",\"Crystal Palace\",\r",
 							"\"Everton FC\",\"Fulham\",\"Leicester City FC\",\"Leeds United\",\"Liverpool FC\",\"Manchester City FC\",\"Manchester United FC\",\r",
 							"\"Newcastle United\",\"Nottingham Forest\",\"Southampton FC\",\"Tottenham Hotspur FC\",\"West Ham United\",\"Wolverhampton Wanderers\",\r",
 							"\"FC Bayern Munich\",\"SV Werder Bremen\",\"Borussia Dortmund\",\"VfB Stuttgart\",\"Hamburger SV\",\"Borussia Mönchengladbach\",\r",
 							"\"Eintracht Frankfurt\",\"FC Schalke\",\"Bayer 04 Leverkusen\",\"Hertha BSC\",\"VfL Bochum\",\"Hannover\",\"MSV Duisburg\",\"VfL Wolfsburg\",\r",
-							"\"Fortuna Düsseldorf\",\"Karlsruher SC\",\"SC Freiburg\",\"Eintracht Braunschweig\",\"TSV 1860 München\",\"Arminia Bielefeld\",\"TSG 1899 Hoffenheim\",\"KFC Uerdingen\",\"F.C. Hansa Rostock\",\"FC Augsburg\",\"FC St. Pauli\",\"SV Waldhof Mannheim\",\"Kickers Offenbach\",\"Rot-Weiss Essen\",\"RB Leipzig\",\"FC Energie Cottbus\",\"SV Darmstadt\",\"Alemannia Aachen\",\"Dynamo Dresden\",\"SG Wattenscheid\",\"Wuppertaler SV\",\"Borussia Neunkirchen\",\"SpVgg Greuther Fürth\",\"SC Paderborn\",\"FC Ingolstadt\",\"SpVgg Unterhaching\",\"Stuttgarter Kickers\",\"Tennis Borussia Berlin\"]                                       \r",
-							"let randomClubName= clubName[Math.floor(Math.random() * clubName.length)]\r",
-							"pm.environment.set('email',email)\r",
-							"pm.environment.set('clubName',randomClubName)"
+							"\"Fortuna Düsseldorf\",\"Karlsruher SC\",\"SC Freiburg\",\"Eintracht Braunschweig\",\"TSV 1860 München\",\"Arminia Bielefeld\",\"TSG 1899 Hoffenheim\",\"KFC Uerdingen\",\"F.C. Hansa Rostock\",\"FC Augsburg\",\"FC St. Pauli\",\"SV Waldhof Mannheim\",\"Kickers Offenbach\",\"Rot-Weiss Essen\",\"RB Leipzig\",\"FC Energie Cottbus\",\"SV Darmstadt\",\"Alemannia Aachen\",\"Dynamo Dresden\",\"SG Wattenscheid\",\"Wuppertaler SV\",\"Borussia Neunkirchen\",\"SpVgg Greuther Fürth\",\"SC Paderborn\",\"FC Ingolstadt\",\"SpVgg Unterhaching\",\"Stuttgarter Kickers\",\"Tennis Borussia Berlin\"];                                       \r",
+							"let randomClubName= clubName[Math.floor(Math.random() * clubName.length)];\r",
+							"pm.environment.set('email',email);\r",
+							"pm.environment.set('clubName',randomClubName);"
 						],
 						"type": "text/javascript"
 					}
