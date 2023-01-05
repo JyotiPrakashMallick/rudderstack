@@ -47,7 +47,12 @@
 							"pm.test(\"Successful POST request\", () => {\r",
 							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202])\r",
 							"    console.log(\"T07 [Positive]: Verify the post request is Successful\");\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type header is present\", () => {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"    console.log(\"T08 [Positive]: Verify the response header\");\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
