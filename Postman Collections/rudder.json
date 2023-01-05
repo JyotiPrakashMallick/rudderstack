@@ -46,6 +46,7 @@
 							"\r",
 							"pm.test(\"Successful POST request\", () => {\r",
 							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202])\r",
+							"    console.log(\"T07 [Positive]: Verify the post request is Successful\");\r",
 							"});"
 						],
 						"type": "text/javascript"
