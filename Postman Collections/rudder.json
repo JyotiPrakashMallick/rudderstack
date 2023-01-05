@@ -40,7 +40,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Bodyis a string\", function () {\r",
-							"    pm.response.to.have.body(\"whole-body-text\");\r",
+							"    pm.response.to.have.body(\"OK\");\r",
 							"    console.log(\"T06 [Positive]: Verify the response body is not null\");\r",
 							"});"
 						],
