@@ -42,6 +42,10 @@
 							"pm.test(\"Bodyis a string\", function () {\r",
 							"    pm.response.to.have.body(\"OK\");\r",
 							"    console.log(\"T06 [Positive]: Verify the response body is not null\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful POST request\", () => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202])\r",
 							"});"
 						],
 						"type": "text/javascript"
