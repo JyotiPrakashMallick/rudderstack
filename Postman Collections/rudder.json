@@ -37,6 +37,10 @@
 							"pm.test(\"Body should contain a string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"OK\");\r",
 							"    console.log(\"T05 [Positive]: Verify the response body is not null\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Bodyis a string\", function () {\r",
+							"    pm.response.to.have.body(\"whole-body-text\")\r",
 							"});"
 						],
 						"type": "text/javascript"
